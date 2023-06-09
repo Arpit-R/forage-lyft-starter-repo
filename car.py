@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
 from car_parts import engine,battery
+from servicable import Servicable
 
-class Car():
+class Car(Servicable):
     def __init__(self, engine: engine.Engine,battery: battery.Battery):
         self.engine = engine
         self.battery = battery
